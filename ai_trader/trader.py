@@ -72,7 +72,7 @@ class Trading:
         stock_name = target
         data = self.dataset_loader(stock_name)
         window_size = 10
-        episodes = 1000
+        episodes = 1
         batch_size = 32
         data_samples = len(data) - 1
         trader = Trader(window_size)
